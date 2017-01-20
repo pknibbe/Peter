@@ -24,7 +24,11 @@ public class SearchUser extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         UserData userData = new UserData();
-        req.setAttribute("users", userData.getAllUsers());
+        String searchType = req.getParameter("criterion");
+        String value = req.getParameter("value");
+        if (searchType.isEmpty()) {
+            req.setAttribute("users", userData.getAllUsers());
+        } else req.setAttribute("users", userData.getUserList(searchType, value));
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
         dispatcher.forward(req, resp);
     }

@@ -1,0 +1,2 @@
+i-0b704fe8f1906b959
+ubuntu@ec2-52-14-68-236.us-east-2.compute.amazonaws.com

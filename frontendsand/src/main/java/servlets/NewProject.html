@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a New Maven Project in IntelliJ from Instructional Video</title><br/>
+    <h1>Create a New Maven Project in IntelliJ from Instructional Video</h1><br/>
+    <p><a href="https://www.youtube.com/watch?v=MruuBNOwVXg&feature=youtu.be">The video</a></p>
+</head>
+<body>
+<h1>Create the Project</h1>
+<p> In IntelliJ from welcome screen or under FILE select "new Project".
+    Choose "Maven", then, "from archetype" and "Maven webapp".</p><br/>
+<img src="NewProject.PNG" title="Step One, Create the new project" /><br/>
+<p> Give your project a descriptive name that tells you what it is and choose Next a couple
+of times.</p><br/>
+<img src="NameNewProject.PNG" title="Step One, Create the new project" /><br/>
+<h1>Copy in dependencies from another POM</h1><br/>
+<h1>Add needed directories for java, resources, and test</h1>
+<p>Select the main directory in the project view</p><br/>
+<img src="AddDirectories.PNG" title="Choose the home of the new directory" /><br/>
+<p>Right click and choose "New" and then Directory. Name the directory "java" all lowercase!
+Otherwise, Maven won't know what to do with it.
+    You can choose refactor and rename to fix this if you get it wrong.</p>
+<p>Right click on the new java directory and choose "mark Directory" and then "sources Root".
+    This tells Maven to look here for things to compile.</p>
+<p>Right click on the java directory again and choose "New" and then package.
+Give it a name like "entity" or "persistence".
+    Repeat as needed to build out your package structure.</p>
+<p>Right click on the src directory and follow the same steps to create a
+    new directory called "test". Under it create a directory called "java".
+    Follow the same instructions to mark it, but mark it as "test
+Sources Root" instead of just "sources Root". This will tell Maven where to find the unit tests.</p>
+<p>Finally, you can create a resources directory under test and mark it as test resources.</p>
+<br/>
+</body>
+</html>

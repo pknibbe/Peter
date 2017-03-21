@@ -1,0 +1,16 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Example TLD</short-name>
+    <uri>http://germs.org/tags</uri>
+    <tag>
+        <name>Hello</name>
+        <tag-class>EnterpriseTag.HelloWorldTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>Greetings</name>
+        <tag-class>EnterpriseTag.GreetingsTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>
